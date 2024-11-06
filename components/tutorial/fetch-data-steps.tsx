@@ -69,8 +69,19 @@ export default function FetchDataSteps() {
         </p>
         <CodeBlock code={create} />
       </TutorialStep>
+      <h3 className="text-xl font-bold">Now it is your turn!</h3>
+      <TutorialStep title="Create a way to give coupons to users">
+        <p>Only authenticated users should be able to see and give themselves their coupons. Coupons are a pack of credits that can be active or inactive. Create a page in `/app/coupons` that allows users to give themselves coupons. They should be able to select the number of credits inside the coupon.</p>
+      </TutorialStep>
+      <TutorialStep title="Create a way for users to view their coupons">
+        <p>Only authenticated users should be able to view their coupons. 1 coupon entry per table row.</p>
+      </TutorialStep>
+      <TutorialStep title="Create a way for users to toggle their coupons to inactive">
+        <p>Only authenticated users should be able to toggle their coupons to inactive. Allow for you to toggle individual coupons to inactive.</p>
+      </TutorialStep>
 
-      <TutorialStep title="Query coupons example">
+      <h3 className="mt-8 text-xl font-bold">Query coupons fetch example for reference</h3>
+      
         <p>
           To create a Supabase client and query data from an Async Server
           Component, create a new page.tsx file at{" "}
@@ -82,18 +93,8 @@ export default function FetchDataSteps() {
         <CodeBlock code={server} />
         <p>Alternatively, you can use a Client Component. (If you choose to do that, make sure you either have supabase being called in the server component or have the supabase client being called in the client component but make sure to have RLS enabled)</p>
         <CodeBlock code={client} />
-      </TutorialStep>
 
-      <h3 className="text-xl font-bold">Now it is your turn!</h3>
-      <TutorialStep title="Create a way to give coupons to users">
-        <p>Only authenticated users should be able to see and give themselves their coupons.</p>
-      </TutorialStep>
-      <TutorialStep title="Create a way for users to view their coupons">
-        <p>Only authenticated users should be able to view their coupons.</p>
-      </TutorialStep>
-      <TutorialStep title="Create a way for users to toggle their coupons to inactive">
-        <p>Only authenticated users should be able to toggle their coupons to inactive.</p>
-      </TutorialStep>
+      
     </ol>
   );
 }

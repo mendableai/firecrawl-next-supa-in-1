@@ -15,9 +15,9 @@ const server = `import { createClient } from '@/utils/supabase/server'
 
 export default async function Page() {
   const supabase = createClient()
-  const { data: notes } = await supabase.from('notes').select()
+  const { data: coupons } = await supabase.from('coupons').select()
 
-  return <pre>{JSON.stringify(notes, null, 2)}</pre>
+  return <pre>{JSON.stringify(coupons, null, 2)}</pre>
 }
 `.trim();
 

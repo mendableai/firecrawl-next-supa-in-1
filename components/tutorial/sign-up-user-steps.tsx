@@ -4,7 +4,7 @@ import { ArrowUpRight } from "lucide-react";
 
 export default function SignUpUserSteps() {
   return (
-    <ol className="flex flex-col gap-6">
+    <ol className="flex flex-col gap-6 h-[70vh]">
       <TutorialStep title="Sign up your first user">
         <p>
           Head over to the{" "}
@@ -17,7 +17,7 @@ export default function SignUpUserSteps() {
           page and sign up to view the app in an authenticated state.
         </p>
       </TutorialStep>
-      <TutorialStep title="Continue the setup there">
+      <TutorialStep title="Continue the setup in the `/protected` page">
         <p>
         </p>
       </TutorialStep>

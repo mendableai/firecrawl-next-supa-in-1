@@ -48,16 +48,20 @@ create trigger on_auth_user_created
   for each row execute procedure public.handle_new_user();
 ```
 
-5. Go back to your project and install dependencies:
+## During the interview
+
+0. Clone the repository
+
+1. Go to your project and install dependencies:
 
    ```bash
    npm install
    ```
 
-6. You can now run the Next.js local development server:
+2. You can now run the Next.js local development server:
 
    ```bash
    npm run dev
    ```
 
-   The starter kit should now be running on [localhost:3000](http://localhost:3000/).
+The starter kit should now be running on [localhost:3000](http://localhost:3000/).
